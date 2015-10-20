@@ -32,7 +32,7 @@ main{
   height: 500px;
   text-align: center;
   margin: 0 auto;
-  background: #392f28;
+  background: none;
   position: relative; 
   color: #392f28;
 }
