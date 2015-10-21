@@ -1,0 +1,17 @@
+strona: wojteksasiela.cba.pl
+
+logowanie cba.pl
+draognisek
+nenxlexlih
+
+mysql
+log: dragonis
+pass: draognis
+host: mysql.cba.pl
+nazwa_db: wojteksasiela_cba_pl
+
+ftp: 
+ftp://wojteksasiela.cba.pl
+nazwa: admin@wojteksasiela.cba.pl
+pass: dragonis 
+
