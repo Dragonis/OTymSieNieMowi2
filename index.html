@@ -417,8 +417,9 @@
           <p class="contact-para">Wcześniejsze nadesłanie formularza ułatwi pracę organizatorom – dziękujemy. </p>
           <div class="w-form">
           <center>
-            <form action="contact.php" method="post">
-            Dane uczestnika <br>
+            <div action="contact.php" method="post" >
+                <div id="formularz_kontakowy" style="float:left;">
+                Dane uczestnika <br>
                 <label for="name" style="color:white;">Imię:</label>
              <input class="w-input" type="text" placeholder="Imię" name="cf_name">
              <label for="surname" style="color:white;">Nazwisko:</label>
@@ -431,12 +432,30 @@
                 <input class="w-input" type="text" placeholder="Telefon kontaktowy" name="cf_phone">
                 <label for="email" style="color:white;">Adres E-mail:</label>
              <input class="w-input" placeholder="Wprowadż swój adres e-mail" type="text" name="cf_email" required="required">
+                </div>
             <!--&lt;!&ndash;<label for="email">Twoja wiadomość:</label>-->
             <!--<label for="email" style="color:white;">Do prelegentów: <br> Wprowadż proponowany temat przemówienia.</label>-->
              <!--<input class="w-input" placeholder="Wprowadz proponowany temat przemówienia." name="cf_message"><br> &ndash;&gt;-->
 
-                Zgłaszam swój udział <br>
-                <table style="color: white;">
+                <style>
+                    input[type=text]{
+                        width: 300px;
+                        margin-right: 100px;
+                    }
+
+                    label{
+                        margin-right: 50px;
+                    }
+
+                    button{
+                        margin-rop:300px;
+                    }
+
+                    input:-moz-placeholder {color: #00cc00}
+                    input::-webkit-input-placeholder {color: #00cc00}
+
+                </style>
+                <table style="color: white; float:left;" >
                     <tr>
                         <td>
                             <br>
@@ -444,11 +463,11 @@
 
                     </tr>
                     <tr>
-                        <td><p for="czyUczestnictwoBierne" style="color:white;">•	Bierne </p></td>
+                        <td><p for="czyUczestnictwoBierne" style="color:white;">•	Słuchacz </p></td>
                         <td><input type="checkbox" type="text" name="of_czyBiernyUdzial"></td>
                     </tr>
                     <tr>
-                        <td><label for="czyUczestnictwoCzynne" style="color:white;">•	Czynne </label></td>
+                        <td><label for="czyUczestnictwoCzynne" style="color:white;">•	Prelegent </label></td>
                         <td><input type="checkbox" type="text" name="of_czyCzynnyUdzial"></td>
                     </tr>
                     <tr>
