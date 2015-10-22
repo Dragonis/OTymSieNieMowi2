@@ -199,7 +199,7 @@
         <div id="who-v-animation">
         <div class="wrap">
           <div class="w-row exp-des">
-            <div class="w-col w-col-6 exp-col1" style=" opacity: 1; background: royalblue; height:420px; ">
+            <div class="w-col w-col-6 exp-col1" style=" border-radius: 24px; opacity: 1; background: royalblue; height:420px; ">
               <div class="col1-div" >
                 <div class="experinc-box"  >
                 <h3 class="experinc-box-h3" style="color: black; ;">O Nas</h3>
@@ -219,7 +219,7 @@
             </div>
             <div class="w-col w-col-6 exp-col2">
               <div class="col2-div">
-                <img src="images/who-we-are.png">
+                <img style="border-radius:24px;" src="images/who-we-are.png">
               </div>
             </div>
           </div>
@@ -407,22 +407,114 @@
       <div class="w-container">
         <div class="wrap">
           <div class="contact-div">
-            <h1 class="contact-heading">REJESTRACJA</h1>
+            <h1 class="contact-heading">FORMULARZ REJESTRACYJNY</h1>
             <div class="sepreater"></div>
           </div>
-          <p class="contact-para">Dziękujemy za poświęcenie czasu, na rejestrację jak i za chęć przybycia.
-            <br>Odpowiedż z potwierdzeniem miejsca na konferencję zostanie wysłana w przeciągu 24 godzin. <br> Dziękujemy i witamy w naszej konferencji!</p>
+            <div id="loga">
+                <img src="images/logo-kola.png" alt="">
+                <img src="images/logo-kul-rejestracja.png" alt="">
+            </div>
+          <p class="contact-para">Wcześniejsze nadesłanie formularza ułatwi pracę organizatorom – dziękujemy. </p>
           <div class="w-form">
           <center>
             <form action="contact.php" method="post">
-            <label for="name" style="color:white;">Imię i nazwisko:</label>
-             <input class="w-input" type="text" placeholder="Wpisz imię i nazwisko" name="cf_name">
-           <label for="email" style="color:white;">Adres E-mail:</label>
+            Dane uczestnika <br>
+                <label for="name" style="color:white;">Imię:</label>
+             <input class="w-input" type="text" placeholder="Imię" name="cf_name">
+             <label for="surname" style="color:white;">Nazwisko:</label>
+             <input class="w-input" type="text" placeholder="Nazwisko" name="cf_surname">
+             <label for="universitet" style="color:white;">Uczelnia/Organizacja:</label>
+             <input class="w-input" type="text" placeholder="Uczelnia/Organizacja" name="cf_universitet">
+                <label for="adress" style="color:white;">Adres</label>
+                <input class="w-input" type="text" placeholder="Adres" name="cf_adress">
+                <label for="phone" style="color:white;">Telefon kontaktowy</label>
+                <input class="w-input" type="text" placeholder="Telefon kontaktowy" name="cf_phone">
+                <label for="email" style="color:white;">Adres E-mail:</label>
              <input class="w-input" placeholder="Wprowadż swój adres e-mail" type="text" name="cf_email" required="required">
             <!--&lt;!&ndash;<label for="email">Twoja wiadomość:</label>-->
-            <label for="email" style="color:white;">Do prelegentów: <br> Wprowadż proponowany temat przemówienia.</label>
-             <input class="w-input" placeholder="Wprowadz proponowany temat przemówienia." name="cf_message"><br> -->
-           <input class="w-button" type="submit" value="Wyślij">
+            <!--<label for="email" style="color:white;">Do prelegentów: <br> Wprowadż proponowany temat przemówienia.</label>-->
+             <!--<input class="w-input" placeholder="Wprowadz proponowany temat przemówienia." name="cf_message"><br> &ndash;&gt;-->
+
+                Zgłaszam swój udział <br>
+                <table style="color: white;">
+                    <tr>
+                        <td>
+                            <br>
+                            <label for="" style="color:white;">Uczestnictwo:</label></td>
+
+                    </tr>
+                    <tr>
+                        <td><p for="czyUczestnictwoBierne" style="color:white;">•	Bierne </p></td>
+                        <td><input type="checkbox" type="text" name="of_czyBiernyUdzial"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="czyUczestnictwoCzynne" style="color:white;">•	Czynne </label></td>
+                        <td><input type="checkbox" type="text" name="of_czyCzynnyUdzial"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <label for="" style="color:white;">Obecność:</label></td>
+
+                    </tr>
+                    <tr>
+                        <td> <label for="Konferencja" style="color:white;">•	Konferencja 04.12.2015r.</label>
+                        <td><input type="checkbox" type="text" name="of_Konferencja">
+                    </tr>
+                    <tr>
+                        <td><label for="Szkolenie" style="color:white;">•	Szkolenie 05.12.2015r.</label></td>
+                        <td><input type="checkbox"  type="text" name="of_Szkolenie"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Integracja" style="color:white;">•	Integracja 06.12.2015r.</label></td>
+                        <td><input type="checkbox"  type="text" name="of_Integracja"></td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <br>
+                        <label for="" style="color:white;">Wieczory integracyjne:</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Wieczor04" style="color:white;">•	04.12.2015r.</label></td>
+                        <td><input type="checkbox"  type="text" name="of_WieczorIntegracyjny04"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Wieczor05" style="color:white;">•	05.12.2015r.</label></td>
+                        <td><input type="checkbox"  type="text" name="of_WieczoIntegracyjny05"></td>
+                    </tr>
+                    <td>
+                        <br>
+                        <label for="" style="color:white;">Zgłaszam potrzebę:</label>
+                    </td>
+                    <tr>
+                        <td><label for="Asystent" style="color:white;">•	Asystenta</label></td>
+                        <td><input type="checkbox"  type="text" name="of_Asystent"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="SystemFM" style="color:white;">•	Korzystania z systemu FM</label></td>
+                        <td><input type="checkbox"  type="text" name="of_SystemFM"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="SpeechOfText" style="color:white;">•	Korzystania z Speech to text:</label></td>
+                        <td><input type="checkbox"  type="text" name="of_SpeechOfText"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="PetlaIndukcyjna" style="color:white;">•	Korzystania z pętli indykcyjnej</label></td>
+                        <td><input type="checkbox"  type="text" name="of_PetlaIndukcyjna"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="TlumaczMigowy" style="color:white;">•	Tłumacza języka migowego</label></td>
+                        <td><input type="checkbox"  type="text" name="of_TlumaczMigowy"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Certyfikat" style="color:white;">•	Otrzymania certyfikatu uczestnictwa</label></td>
+                        <td><input type="checkbox"  type="text" name="of_Certyfikat"></td>
+                    </tr>
+                </table>
+
+
+
+                <input class="w-button" type="submit" value="Wyślij">
          </form>
          </center>
           <div class="w-form-done">
