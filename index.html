@@ -166,7 +166,7 @@
             <div class="about-text"><br>
 
             <div id="spotkanie" style="text-align:center;margin-left: auto ;
-  margin-right: auto; margin-bottom:100px; background-image: url('images/slider/cloud.png');">	
+  margin-right: auto; margin-bottom:100px; background-image: url('images/slider/cloud-o.png');">
 
       <div id="logo-uczelni" style="float:left; margin-left:50px; margin-top:width:180px; height:180px; background-image:url('images/logo-kul.gif');"></div>
               
@@ -199,13 +199,14 @@
         <div id="who-v-animation">
         <div class="wrap">
           <div class="w-row exp-des">
-            <div class="w-col w-col-6 exp-col1">
-              <div class="col1-div">
-                <div class="experinc-box">
-                <h3 class="experinc-box-h3">O Nas</h3>
-                <p>Jesteśmy grupą studentów z niedosłuchem z różnych uczelni w Lublinie. </br> Tworzymy razem koło "", w którym omawiamy różne problemy osób słabosłyszących i głuchych. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <!--<div class="buttons">-->
+            <div class="w-col w-col-6 exp-col1" style=" opacity: 1; background: royalblue; height:420px; ">
+              <div class="col1-div" >
+                <div class="experinc-box"  >
+                <h3 class="experinc-box-h3" style="color: black; ;">O Nas</h3>
+                <p style="color: black;;" >Jesteśmy grupą studentów z niedosłuchem z różnych uczelni w Lublinie. </br> Tworzymy razem uczelniane koło naukowe "Surdus Loquens", w którym omawiamy różne problemy osób słabosłyszących i głuchych. <br>
+                    Postanowiliśmy stworzyć 2 edycję konferencji o sprawach dotyczących osób słabosłyszących i głuchych, ich problemach i rozwiązaniach. <br>
+                    Dlatego zapraszamy do udziału na konferencję O tym się nie mówi 2 - Aspekty audiologiczne, techniczne i rehabilitacyjne uszkodzeń słuchu, w celu poszerzenia wiedzy na temat słuchu.
+                    <!--<div class="buttons">-->
                 <!--<div class="btn-ex-one">-->
                   <!--<a class="ex-btn" href="#">Blog koła</a>-->
                 <!--</div>-->
@@ -409,8 +410,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
             <h1 class="contact-heading">REJESTRACJA</h1>
             <div class="sepreater"></div>
           </div>
-          <p class="contact-para">Dziękujemy za poświęcenie czasu, aby się zarejestrować.
-            <br>Odpowiedż zwrotna z potwierdzeniem miejsca zostanie wysłana w przeciągu 24 godzin. <br> Dziękujemy i witamy w naszej konferencji!</p>
+          <p class="contact-para">Dziękujemy za poświęcenie czasu, na rejestrację jak i za chęć przybycia.
+            <br>Odpowiedż z potwierdzeniem miejsca na konferencję zostanie wysłana w przeciągu 24 godzin. <br> Dziękujemy i witamy w naszej konferencji!</p>
           <div class="w-form">
           <center>
             <form action="contact.php" method="post">
@@ -418,8 +419,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
              <input class="w-input" type="text" placeholder="Wpisz imię i nazwisko" name="cf_name">
            <label for="email" style="color:white;">Adres E-mail:</label>
              <input class="w-input" placeholder="Wprowadż swój adres e-mail" type="text" name="cf_email" required="required">
-            <!--<label for="email">Twoja wiadomość:</label>
-             <textarea class="w-input message" placeholder="Wprowadz swoją wiadomość" name="cf_message"></textarea><br> -->
+            <!--&lt;!&ndash;<label for="email">Twoja wiadomość:</label>-->
+            <label for="email" style="color:white;">Do prelegentów: <br> Wprowadż proponowany temat przemówienia.</label>
+             <input class="w-input" placeholder="Wprowadz proponowany temat przemówienia." name="cf_message"><br> -->
            <input class="w-button" type="submit" value="Wyślij">
          </form>
          </center>
