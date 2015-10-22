@@ -1,17 +1,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <?php
-$field_name = $_POST['of_name'];
-$field_surname = $_POST['of_surname'];
-$field_universitet = $_POST['of_universitet'];
-$field_adress = $_POST['of_adress'];
-$field_phone = $_POST['of_phone'];
-$field_email = $_POST['of_email'];
-$field_message = $_POST['of_message'];
+$field_name = $_POST['cf_name'];
+$field_surname = $_POST['cf_surname'];
+$field_universitet = $_POST['cf_universitet'];
+$field_adress = $_POST['cf_adress'];
+$field_phone = $_POST['cf_phone'];
+$field_email = $_POST['cf_email'];
+//$field_message = $_POST['of_message'];
+
 $field_czyBiernyUdzial = $_POST['of_czyBiernyUdzial'];
 $field_czyCzynnyUdzial = $_POST['of_czyCzynnyUdzial'];
 $field_Konferencja = $_POST['of_Konferencja'];
 $field_Szkolenie = $_POST['of_Szkolenie'];
-$field_Integracja = $_POST['of_integracja'];
+$field_Integracja = $_POST['of_Integracja'];
 $field_WieczorIntegracyjny04 = $_POST['of_WieczorIntegracyjny04'];
 $field_WieczorIntegracyjny05 = $_POST['of_WieczoIntegracyjny05'];
 $field_Asystent = $_POST['of_Asystent'];
@@ -24,7 +25,8 @@ $field_Certyfikat = $_POST['of_Certyfikat'];
 $mail_to = 'konferencja.ss@gmail.com';
 $subject = 'Wiadomość od uczestnika '.$field_name . ' ' . $field_surname;
 
-$body_message = 'Od: '.$field_name.' '. $field_surname."\n";
+$body_message .= 'Imie: '.$field_name."\n";
+$body_message .= 'Nazwisko: '.$field_surname."\n";
 $body_message .= 'Uczelnia: '.$field_universitet."\n";
 $body_message .= 'Adres: '.$field_adress."\n";
 $body_message .= 'Telefon: '.$field_phone."\n";
