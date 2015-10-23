@@ -67,7 +67,7 @@ main{
   background: -webkit-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
   background: -ms-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
   background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-  opacity: 0.3;
+  opacity: 0.4;
   position: absolute; 
   z-index: 0;
   left: 0;
