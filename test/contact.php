@@ -2,12 +2,11 @@
 <?php
 $field_name = $_POST['cf_name'];
 $field_surname = $_POST['cf_surname'];
-$field_stopienNaukowy = $_POST['cf_StopienNaukowy'];
 $field_universitet = $_POST['cf_universitet'];
 $field_adress = $_POST['cf_adress'];
 $field_phone = $_POST['cf_phone'];
 $field_email = $_POST['cf_email'];
-$field_message = $_POST['cf_message'];
+//$field_message = $_POST['of_message'];
 
 $field_czyBiernyUdzial = $_POST['of_czyBiernyUdzial'];
 $field_czyCzynnyUdzial = $_POST['of_czyCzynnyUdzial'];
@@ -26,8 +25,8 @@ $field_Certyfikat = $_POST['of_Certyfikat'];
 $mail_to = 'konferencja.ss@gmail.com';
 $subject = 'Wiadomość od uczestnika '.$field_name . ' ' . $field_surname;
 
-$body_message = 'Od: '.$field_name.' '. $field_surname."\n";
-$body_message .= 'Stopien naukowy: '.$field_stopienNaukowy."\n";
+$body_message .= 'Imie: '.$field_name."\n";
+$body_message .= 'Nazwisko: '.$field_surname."\n";
 $body_message .= 'Uczelnia: '.$field_universitet."\n";
 $body_message .= 'Adres: '.$field_adress."\n";
 $body_message .= 'Telefon: '.$field_phone."\n";
