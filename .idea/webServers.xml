@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="754bec9b-35b5-440c-a539-fabd70844963" name="wojtek.sasiela.cba.pl" url="http://wojtek.sasiela.cba.pl">
+        <fileTransfer host="wojtek.sasiela.cba.pl" port="21" username="admin@wojteksasiela.cba.pl">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
