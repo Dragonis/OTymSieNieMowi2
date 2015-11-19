@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+
+    <h2>Agenda</h2>
+
+    <p class="lead">
+        This agenda viewer will let you see multiple events cleanly!
+    </p>
+
+    <div class="alert alert-warning">
+        <h4>Uwaga:</h4>
+
+        <p>Organizatorzy zastrzegają sobie prawo do zmian programu.</p>
+    </div>
+
+    <hr/>
+
+    <div class="agenda">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered" style="border: black 1px;">
+                <thead>
+                <tr>
+                    <td class="agenda-time">
+                        Data
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Godzina
+                        </div>
+                    </td>
+                    <td> Szczegółowy plan konferencji i tematy wystąpień</td>
+                </tr>
+                </thead>
+
+
+                <tbody>
+
+                <!-- Multiple events in a single day (note the rowspan) -->
+                <tr>
+                    <td class="agenda-date" class="active" rowspan="10">
+                        <div class="dayofmonth">4</div>
+                        <div class="dayofweek">Grudzień</div>
+                        <div class="shortdate text-muted">Grudż, 2015</div>
+                    </td>
+                    <td class="agenda-time">
+                        8:00 - 9:00
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Rejestracja
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        09:00 - 9:30
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Uroczyste rozpoczęcie konferencji
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                       09:30 - 10:30
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            I Sesja Rehablitacyjna
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        10:30 - 11:00
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Przerwa kawowa 1
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        11:00 - 12:15
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Cd I Sesja Rehablitacyjna
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        12:15 - 13:45
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Przerwa obiadowa w Stołówce KUL
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        13:45 - 15:00
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            II Sesja Audiologiczna
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        15:00 - 15:30
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Przerwa kawowa 2
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        15:30 - 16:15
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            III Sesja Techniczna
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="agenda-time">
+                        16:15 - 17:00
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            Zakończenie konferencji
+                        </div>
+                    </td>
+                </tr>
+
+
+                <!-- Single event in a single day -->
+                <tr>
+                    <td class="agenda-date" class="active" rowspan="30">
+                        <div class="dayofmonth">5</div>
+                        <div class="dayofweek">Grudzień</div>
+                        <div class="shortdate text-muted">Grudż, 2015</div>
+                    </td>
+                    <td class="agenda-time">
+                        <b>09:00 - 9:30</b>
+                    </td>
+                    <td class="agenda-events">
+                        <div class="agenda-event">
+                            <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
+                            <b>Uroczyste rozpączęcie konferencji</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>09:30</b></td>
+                    <td><b>Rozpączęcie 1 Sesji Rehabilitacyjnej</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>09:30 - 09:45</td>
+                    <td>prof. dr hab. Kazimiera KRAKOWIAK <br>
+                        Trudności osób słyszących w komunikowaniu się z niesłyszącymi i
+                        słabosłyszącymi
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+
+                    <td>09:45 - 10:00</td>
+                    <td>dr hab. Ewa DOMAGAŁA-ZYŚK<br>
+                        Uczenie się języków obcych przez osoby niesłyszące i słabosłyszące –<br>
+                        bariera w edukacji czy szansa na rozwój?
+                    </td>
+                    <td></td>
+                <tr>
+                    <td>09:30 - 09:45</td>
+                    <td>prof. dr hab. Kazimiera KRAKOWIAK <br>
+                        Trudności osób słyszących w komunikowaniu się z niesłyszącymi i
+                        słabosłyszącymi
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00 - 10:15</td>
+                    <td>dr Aleksandra BOROWICZ<br>
+                        Kampanie społeczne a upowszechnianie wiedzy na temat problemów<br>
+                        osób z uszkodzeniami słuchu<br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:15 - 10:30</td>
+                    <td>dr Renata KOŁODZIEJCZYK<br>
+                        Rodzaje ćwiczeń językowych na lektoracie języka polskiego dla<br>
+                        młodzieży z uszkodzeniami słuchu <br>
+                        <br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>10:30 - 11:00</b></td>
+                    <td><b>Przerwa kawowa 1 (30 min.)</b><br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>11:00</b></td>
+                    <td><b>Kontynuacja I Sesji Rehablitacyjnej</b><br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 - 11:15</td>
+                    <td>dr Ewa MUZYKA-FURTAK <br>
+                        O wpływie uszkodzeń słuchu na nabywanie słów i ich znaczeń
+                        <br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:15 - 11:30</td>
+                    <td>dr Juliusz IWANICKI<br>
+                        "Głuche" społeczeństwo i religia osób słyszących
+                        <br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:30 - 11:45</td>
+                    <td>mgr Beata KRYSTKOWIAK<br>
+                        Granice polskiego systemu wsparcia dla osób z uszkodzeniem słuchu<br>
+                        - czyli o samodzielności nie(do)słyszących w różnych wymiarach<br>
+                        społecznych<br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:45 - 12:00</td>
+                    <td>mgr Monika SZYMANEK-SZAWRACKA<br>
+                        Sukcesy w rehabilitacji jako główny czynnik w przełamywaniu<br>
+                        wszystkich barier<br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 12:15</td>
+                    <td>lic. Paulina LEWANDOWSKA<br>
+                        Jak to się dzieje, że podróże rehabilitują? - na przykładzie<br>
+                        doświadczeń własnych i innych osób z uszkodzeniem słuchu<br>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>12:15</b> </td>
+                    <td><b>Zakończenie I Sesji Rehablitacyjnej</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>12:15 - 13:45</b> </td>
+                    <td><b> Przerwa obiadowa na Stołówce KULu (1,5h)</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>13:45</b> </td>
+                    <td><b>Rozpoczęcie II Sesji Audiologicznej)</b></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:45 - 14:00</td>
+                    <td>dr n. med. Hanna ANDRZEJEWSKA<br>
+                        Omówienie przyczyn i rodzajów niedosłuchu, konieczność<br>
+                        diagnostyki audiologicznej, stwierdzenie lokalizacji uszkodzenia na<br>
+                        drodze słuchowej</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:00 - 14:15</td>
+                    <td>mgr Monika TRĘTKO<br>
+                        Implant pniowy w pniu mózgu jako alternatywa przywracająca słuch</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:15 - 14:30</td>
+                    <td>lic. Małgorzata TALIPSKA<br>
+                        Wybrane techniki i narzędzia badawcze w badaniach społecznych<br>
+                        przeprowadzanych wśród osób głuchych i słabosłyszących -<br>
+                        wątpliwości i rekomendacje<br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:15 - 14:30</td>
+                    <td>lic. Małgorzata TALIPSKA<br>
+                        Wybrane techniki i narzędzia badawcze w badaniach społecznych<br>
+                        przeprowadzanych wśród osób głuchych i słabosłyszących -<br>
+                        wątpliwości i rekomendacje<br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:30 - 14:45</td>
+                    <td>Karolina CZABAN oraz inż. Alicja NOWOGRODZKA<br>
+                        Żywienie produktami mleczarskimi a słuch - co mają wspólnego?<br>                    <br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>14:45</b></td>
+                    <td><b>Zakończenie II Sesji Audiologicznej</b><br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>14:45 - 14:30</b></td>
+                    <td><b>Przerwa kawowa 2 (45 min.)</b><br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>15:30</b></td>
+                    <td><b>Rozpoczęcie III Sesji Technicznej</b><br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:30 - 15:45</td>
+                    <td>Lidia SMOLAREK-BEST<br>
+                        Europejska norma: Usługi oferowane przez protetyków słuchu i
+                        audiologów<br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:45 - 16:00</td>
+                    <td>mgr Andrzej KAPITAN<br>
+                        Zarys procedury dopasowywania aparatów słuchowych<br>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:00 - 16:15</td>
+                    <td>mgr Wojciech KRUKOWSKI<br>
+                        Nieskończone możliwości, czyli świat aplikacji dla słabosłyszących i
+                        niesłyszących<td></td>
+                </tr>
+                <tr>
+                    <td><b>16:15</b></td>
+                    <td><b>Zakończenie III Sesji Techniczej</b><td></td>
+                </tr>
+                <tr>
+                    <td><b>16:15 - 17:00</b></td>
+                    <td><b>Zakończenie konferencji</b><td></td>
+                </tr>
+
+
+
+                </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
