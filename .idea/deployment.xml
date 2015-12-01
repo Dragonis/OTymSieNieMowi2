@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" serverName="wojtek.sasiela.cba.pl">
     <serverData>
+      <paths name="otymsieniemowi2.cba.pl">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="wojtek.sasiela.cba.pl">
         <serverdata>
           <mappings>
